@@ -98,7 +98,7 @@ const GameDetailAndBidding = () => {
   };
 
   const handlePlaceBid = async (amount) => {
-    console.log(`Placing bid: €${amount.toFixed(2)}`);
+    console.log(`Placing bid: $${amount.toFixed(2)}`);
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
     
@@ -114,11 +114,11 @@ const GameDetailAndBidding = () => {
     });
     
     // Show success message or update UI
-    alert(`¡Puja realizada! €${amount.toFixed(2)}`);
+    alert(`¡Puja realizada! $${amount.toFixed(2)}`);
   };
 
   const handleBuyNow = async () => {
-    console.log(`Buying now: €${gameData.currentPrice.toFixed(2)}`);
+    console.log(`Buying now: $${gameData.currentPrice.toFixed(2)}`);
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
     alert('¡Compra realizada con éxito!');

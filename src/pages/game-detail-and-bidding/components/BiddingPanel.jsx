@@ -24,10 +24,10 @@ const BiddingPanel = ({
       return 'Introduce una cantidad válida';
     }
     if (numAmount < minimumBid) {
-      return `La puja mínima es €${minimumBid.toFixed(2)}`;
+      return `La puja mínima es $${minimumBid.toFixed(2)}`;
     }
     if (numAmount <= currentPrice) {
-      return `La puja debe ser mayor que €${currentPrice.toFixed(2)}`;
+      return `La puja debe ser mayor que $${currentPrice.toFixed(2)}`;
     }
     return '';
   };
@@ -133,10 +133,10 @@ const BiddingPanel = ({
                   className="flex flex-col items-center py-3"
                 >
                   <span className="font-data text-sm font-medium">
-                    €{(currentPrice + amount).toFixed(2)}
+                    ${(currentPrice + amount).toFixed(2)}
                   </span>
                   <span className="font-caption text-xs text-muted-foreground">
-                    +€{amount}
+                    +${amount}
                   </span>
                 </Button>
               ))}
@@ -147,7 +147,7 @@ const BiddingPanel = ({
               <Input
                 type="number"
                 label="Puja personalizada"
-                placeholder={`Mínimo €${minimumBid.toFixed(2)}`}
+                placeholder={`Mínimo $${minimumBid.toFixed(2)}`}
                 value={customBid}
                 onChange={(e) => {
                   setCustomBid(e.target.value);
@@ -168,7 +168,7 @@ const BiddingPanel = ({
                 iconName="TrendingUp"
                 iconPosition="left"
               >
-                Pujar €{customBid ? parseFloat(customBid).toFixed(2) : '0.00'}
+                Pujar ${customBid ? parseFloat(customBid).toFixed(2) : '0.00'}
               </Button>
             </div>
           </div>
@@ -191,7 +191,7 @@ const BiddingPanel = ({
                 iconName="ShoppingCart"
                 iconPosition="left"
               >
-                Comprar ahora - €{currentPrice.toFixed(2)}
+                Comprar ahora - ${currentPrice.toFixed(2)}
               </Button>
               
               <Button
@@ -243,7 +243,7 @@ const BiddingPanel = ({
                 • Las pujas son vinculantes y no se pueden cancelar
               </p>
               <p className="mb-1">
-                • El incremento mínimo es de €0.50
+                • El incremento mínimo es de $0.50
               </p>
               <p>
                 • El ganador será contactado al finalizar la subasta

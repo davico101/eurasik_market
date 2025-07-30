@@ -117,7 +117,7 @@ const ShippingLocationSection = ({ shippingData, onUpdate }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Input
               type="number"
-              label="Coste de envío (€)"
+              label="Coste de envío ($)"
               placeholder="0.00"
               value={shippingData.shippingCost || ''}
               onChange={(e) => handleInputChange('shippingCost', e.target.value)}

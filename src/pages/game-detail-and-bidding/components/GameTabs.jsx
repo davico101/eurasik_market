@@ -287,7 +287,7 @@ const GameTabs = ({ gameData = {}, sellerData = {}, biddingHistory = [] }) => {
                     </div>
                     <div className="text-right">
                       <p className="font-data text-lg font-medium text-primary">
-                        €{bid.amount.toFixed(2)}
+                        ${bid.amount.toFixed(2)}
                       </p>
                       {index === 0 && (
                         <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-caption font-medium text-success bg-success/10 mt-1">

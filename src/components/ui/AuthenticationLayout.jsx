@@ -39,7 +39,7 @@ const AuthenticationLayout = ({ children }) => {
             </div>
             <div className="text-center">
               <h1 className="font-heading font-bold text-2xl text-foreground">
-                BoardGame Exchange
+                EURASIK MARKET 
               </h1>
               <p className="font-caption text-sm text-muted-foreground">
                 Intercambia tus juegos favoritos
@@ -73,7 +73,7 @@ const AuthenticationLayout = ({ children }) => {
       <footer className="py-6 px-4">
         <div className="max-w-md mx-auto text-center">
           <p className="font-caption text-xs text-muted-foreground">
-            © 2025 BoardGame Exchange. Todos los derechos reservados.
+            © 2025 EURASIK MARKET. Todos los derechos reservados.
           </p>
           <div className="flex justify-center space-x-4 mt-2">
             <Button

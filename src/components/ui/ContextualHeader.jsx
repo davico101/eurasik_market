@@ -12,7 +12,7 @@ const ContextualHeader = () => {
     switch (location.pathname) {
       case '/marketplace-dashboard':
         return {
-          title: 'BoardGame Exchange',
+          title: 'EURASIK MARKET',
           showLogo: true,
           showSearch: false,
           showBack: false,
@@ -78,7 +78,7 @@ const ContextualHeader = () => {
         };
       default:
         return {
-          title: 'BoardGame Exchange',
+          title: 'EURASIK MARKET',
           showLogo: true,
           showSearch: false,
           showBack: false,
@@ -120,7 +120,7 @@ const ContextualHeader = () => {
                 <Icon name="Gamepad2" size={20} className="text-primary-foreground" />
               </div>
               <span className="font-heading font-semibold text-lg text-foreground hidden sm:block">
-                BoardGame Exchange
+              EURASIK MARKET
               </span>
             </div>
           )}

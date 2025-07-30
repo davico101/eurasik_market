@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
-import ScrollToTop from "components/ScrollToTop";
-import ErrorBoundary from "components/ErrorBoundary";
-import NotFound from "pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
+import ErrorBoundary from "./components/ErrorBoundary";
+import NotFound from "./pages/NotFound";
 import UserLogin from './pages/user-login';
 import GameSearchAndBrowse from './pages/game-search-and-browse';
 import GameDetailAndBidding from './pages/game-detail-and-bidding';
@@ -18,7 +18,6 @@ const Routes = () => {
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes>
-        {/* Define your route here */}
         <Route path="/" element={<GameDetailAndBidding />} />
         <Route path="/user-login" element={<UserLogin />} />
         <Route path="/game-search-and-browse" element={<GameSearchAndBrowse />} />

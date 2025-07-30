@@ -87,29 +87,29 @@ const FilterPanel = ({ isOpen, onClose, filters, onFiltersChange, isMobile = fal
     {
       key: 'price',
       title: 'Rango de Precio',
-      icon: 'Euro',
+      icon: 'DollarSign',
       content: (
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-2">
             <Input
               type="number"
-              placeholder="Mín €"
+              placeholder="Mín $"
               value={localFilters.priceRange?.min || ''}
               onChange={(e) => handleRangeChange('priceRange', 'min', e.target.value)}
             />
             <Input
               type="number"
-              placeholder="Máx €"
+              placeholder="Máx $"
               value={localFilters.priceRange?.max || ''}
               onChange={(e) => handleRangeChange('priceRange', 'max', e.target.value)}
             />
           </div>
           <div className="space-y-2">
             {[
-              { label: 'Menos de €20', min: 0, max: 20 },
-              { label: '€20 - €50', min: 20, max: 50 },
-              { label: '€50 - €100', min: 50, max: 100 },
-              { label: 'Más de €100', min: 100, max: 999 }
+              { label: 'Menos de $20', min: 0, max: 20 },
+              { label: '$20 - $50', min: 20, max: 50 },
+              { label: '$50 - $100', min: 50, max: 100 },
+              { label: 'Más de $100', min: 100, max: 999 }
             ].map(range => (
               <button
                 key={range.label}

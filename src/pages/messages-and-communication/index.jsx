@@ -131,7 +131,7 @@ import React, { useState, useEffect, useRef } from 'react';
                 },
                 {
                   id: 3,
-                  text: 'Sistema: Nueva puja recibida por €45.00',
+                  text: 'Sistema: Nueva puja recibida por $45.00',
                   senderId: 'system',
                   timestamp: '2025-01-30T13:30:00Z',
                   type: 'bid',
@@ -164,7 +164,7 @@ import React, { useState, useEffect, useRef } from 'react';
               3: [
                 {
                   id: 1,
-                  text: 'Sistema: Pago confirmado por €120.00',
+                  text: 'Sistema: Pago confirmado por $120.00',
                   senderId: 'system',
                   timestamp: '2025-01-29T16:15:00Z',
                   type: 'payment',

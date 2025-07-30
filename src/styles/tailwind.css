@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFCF8; /* warm off-white */
+    --color-foreground: #2C1810; /* rich dark brown */
+    --color-border: #E5DDD5; /* warm gray */
+    --color-input: #F5F2ED; /* subtle cream */
+    --color-ring: #8B4513; /* warm saddle brown */
+    
+    /* Card Colors */
+    --color-card: #F5F2ED; /* subtle cream */
+    --color-card-foreground: #2C1810; /* rich dark brown */
+    
+    /* Popover Colors */
+    --color-popover: #FEFCF8; /* warm off-white */
+    --color-popover-foreground: #2C1810; /* rich dark brown */
+    
+    /* Muted Colors */
+    --color-muted: #F5F2ED; /* subtle cream */
+    --color-muted-foreground: #6B4E3D; /* medium brown */
+    
+    /* Primary Colors */
+    --color-primary: #8B4513; /* warm saddle brown */
+    --color-primary-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Secondary Colors */
+    --color-secondary: #D2691E; /* complementary chocolate */
+    --color-secondary-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Destructive Colors */
+    --color-destructive: #CD5C5C; /* muted red */
+    --color-destructive-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Accent Colors */
+    --color-accent: #FF6B35; /* energetic coral */
+    --color-accent-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Success Colors */
+    --color-success: #228B22; /* forest green */
+    --color-success-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Warning Colors */
+    --color-warning: #DAA520; /* goldenrod */
+    --color-warning-foreground: #2C1810; /* rich dark brown */
+    
+    /* Error Colors */
+    --color-error: #CD5C5C; /* muted red */
+    --color-error-foreground: #FEFCF8; /* warm off-white */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .font-caption {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .shadow-warm {
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+  }
+  
+  .shadow-warm-sm {
+    box-shadow: 0 2px 6px rgba(139, 69, 19, 0.1);
+  }
+  
+  .shadow-warm-lg {
+    box-shadow: 0 8px 24px rgba(139, 69, 19, 0.2);
+  }
+}

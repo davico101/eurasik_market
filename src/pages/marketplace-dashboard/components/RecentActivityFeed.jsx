@@ -13,7 +13,7 @@ const RecentActivityFeed = () => {
       id: 1,
       type: 'bid_outbid',
       title: 'Te han superado en una puja',
-      description: 'Alguien pujó €47.00 por "Catan: Edición Especial"',
+      description: 'Alguien pujó $47.00 por "Catan: Edición Especial"',
       gameTitle: 'Catan: Edición Especial',
       gameImage: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=100&h=100&fit=crop',
       timestamp: new Date(Date.now() - 300000), // 5 minutes ago
@@ -49,7 +49,7 @@ const RecentActivityFeed = () => {
       id: 4,
       type: 'bid_won',
       title: '¡Ganaste una subasta!',
-      description: 'Felicidades, ganaste "7 Wonders: Duel" por €25.00',
+      description: 'Felicidades, ganaste "7 Wonders: Duel" por $25.00',
       gameTitle: '7 Wonders: Duel',
       gameImage: 'https://images.unsplash.com/photo-1611891487122-207579d67d98?w=100&h=100&fit=crop',
       timestamp: new Date(Date.now() - 3600000), // 1 hour ago

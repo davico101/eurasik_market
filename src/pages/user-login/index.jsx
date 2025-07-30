@@ -16,7 +16,7 @@ const UserLogin = () => {
     }
 
     // Set page title
-    document.title = 'Iniciar Sesión - BoardGame Exchange';
+    document.title = 'Iniciar Sesión - EURASIK MARKET';
   }, [navigate]);
 
   return (

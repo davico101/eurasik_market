@@ -140,11 +140,11 @@ const PersonalizedRecommendations = () => {
               {/* Price */}
               <div className="flex items-center space-x-2 mb-2">
                 <span className="font-data text-lg font-semibold text-primary">
-                  €{game.price.toFixed(2)}
+                  ${game.price.toFixed(2)}
                 </span>
                 {game.originalPrice && (
                   <span className="font-data text-sm text-muted-foreground line-through">
-                    €{game.originalPrice.toFixed(2)}
+                    ${game.originalPrice.toFixed(2)}
                   </span>
                 )}
               </div>

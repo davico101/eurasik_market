@@ -54,10 +54,10 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Inter', 'sans-serif'],
+        heading: ['proxima-nova', 'sans-serif'],
         body: ['Source Sans Pro', 'sans-serif'],
         caption: ['Nunito Sans', 'sans-serif'],
-        data: ['JetBrains Mono', 'monospace'],
+        data: ['proxima-nova', 'monospace'],
       },
       borderRadius: {
         lg: '16px',

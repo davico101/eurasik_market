@@ -116,7 +116,7 @@ const GameHeader = ({
               {isAuction ? "Puja actual" : "Precio"}
             </p>
             <p className="font-data text-3xl font-bold text-primary">
-              €{currentPrice.toFixed(2)}
+              ${currentPrice.toFixed(2)}
             </p>
             {isAuction && bidCount > 0 && (
               <p className="font-caption text-sm text-muted-foreground mt-1">

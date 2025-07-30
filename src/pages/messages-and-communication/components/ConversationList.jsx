@@ -143,7 +143,7 @@ import React, { useState } from 'react';
                             className="w-6 h-6 rounded object-cover"
                           />
                           <span className="font-caption text-xs text-muted-foreground truncate">
-                            {conversation.game.title} • €{conversation.game.price.toFixed(2)}
+                            {conversation.game.title} • ${conversation.game.price.toFixed(2)}
                           </span>
                         </div>
 

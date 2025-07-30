@@ -353,7 +353,7 @@ const GameSearchAndBrowse = () => {
       const max = filters.priceRange.max || '∞';
       chips.push({
         key: 'price-range',
-        label: `€${min} - €${max}`,
+        label: `$${min} - $${max}`,
         onRemove: () => {
           const newFilters = {
             ...filters,

@@ -62,7 +62,7 @@ const AuctionStatusBar = ({
               </h3>
               <div className="flex items-center space-x-3 mt-1">
                 <span className="font-data text-lg font-medium text-primary">
-                  €{currentBid.toFixed(2)}
+                  ${currentBid.toFixed(2)}
                 </span>
                 <span className="font-caption text-xs text-muted-foreground">
                   {bidCount} pujas
@@ -133,7 +133,7 @@ const AuctionStatusBar = ({
                     Puja actual
                   </p>
                   <p className="font-data text-2xl font-medium text-primary">
-                    €{currentBid.toFixed(2)}
+                    ${currentBid.toFixed(2)}
                   </p>
                 </div>
                 <div>
@@ -157,9 +157,9 @@ const AuctionStatusBar = ({
               </p>
               <div className="grid grid-cols-3 gap-2">
                 {[
-                  { amount: currentBid + 1, label: '+€1' },
-                  { amount: currentBid + 2.50, label: '+€2.50' },
-                  { amount: currentBid + 5, label: '+€5' }
+                  { amount: currentBid + 1, label: '+$1' },
+                  { amount: currentBid + 2.50, label: '+$2.50' },
+                  { amount: currentBid + 5, label: '+$5' }
                 ].map((option, index) => (
                   <Button
                     key={index}
@@ -169,7 +169,7 @@ const AuctionStatusBar = ({
                     className="flex flex-col items-center py-3"
                   >
                     <span className="font-data text-sm font-medium">
-                      €{option.amount.toFixed(2)}
+                      ${option.amount.toFixed(2)}
                     </span>
                     <span className="font-caption text-xs text-muted-foreground">
                       {option.label}
@@ -184,7 +184,7 @@ const AuctionStatusBar = ({
               <div className="flex-1">
                 <input
                   type="number"
-                  placeholder={`Mín. €${(currentBid + 0.50).toFixed(2)}`}
+                  placeholder={`Mín. $${(currentBid + 0.50).toFixed(2)}`}
                   min={currentBid + 0.50}
                   step="0.50"
                   className="w-full px-3 py-2 bg-input border border-border rounded-lg text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
@@ -216,7 +216,7 @@ const AuctionStatusBar = ({
                     </span>
                     <div className="flex items-center space-x-2">
                       <span className="font-data font-medium text-primary">
-                        €{bid.amount.toFixed(2)}
+                        ${bid.amount.toFixed(2)}
                       </span>
                       <span className="font-caption text-xs text-muted-foreground">
                         {bid.time}

@@ -130,7 +130,7 @@ const FeaturedAuctionsCarousel = () => {
                         Puja actual
                       </p>
                       <p className="font-data text-xl font-semibold text-primary">
-                        €{auction.currentBid.toFixed(2)}
+                        ${auction.currentBid.toFixed(2)}
                       </p>
                     </div>
                     <div className="text-right">

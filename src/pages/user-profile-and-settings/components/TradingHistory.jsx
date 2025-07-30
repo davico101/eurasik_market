@@ -84,7 +84,7 @@ import React from 'react';
                     
                     <div className="text-right">
                       <div className="font-heading font-bold text-lg text-foreground">
-                        €{transaction.price?.toFixed(2)}
+                        ${transaction.price?.toFixed(2)}
                       </div>
                       <div className="font-caption text-sm text-muted-foreground">
                         {formatDate(transaction.date)}

@@ -63,7 +63,7 @@ import React from 'react';
                     {message.data?.amount && (
                       <div className="flex items-center justify-center space-x-2">
                         <span className="font-heading font-semibold text-lg text-green-600">
-                          €{message.data.amount.toFixed(2)}
+                          ${message.data.amount.toFixed(2)}
                         </span>
                         {message.data?.method && (
                           <span className="font-caption text-xs text-muted-foreground">
@@ -84,7 +84,7 @@ import React from 'react';
                     {message.data && (
                       <div className="space-y-1">
                         <div className="font-heading font-semibold text-lg text-blue-600">
-                          €{message.data.amount.toFixed(2)}
+                          ${message.data.amount.toFixed(2)}
                         </div>
                         <div className="font-caption text-xs text-muted-foreground">
                           por {message.data.bidder}

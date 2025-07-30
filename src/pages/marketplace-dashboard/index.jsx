@@ -72,7 +72,7 @@ const MarketplaceDashboard = () => {
       id: Date.now(),
       type: 'success',
       title: 'Puja realizada',
-      message: `Tu puja de €${amount?.toFixed(2) || '46.00'} ha sido registrada`,
+      message: `Tu puja de $${amount?.toFixed(2) || '46.00'} ha sido registrada`,
       autoDismiss: true,
       duration: 4000
     }]);

@@ -98,7 +98,7 @@ const ListingDetailsSection = ({ listingData, onUpdate }) => {
           <Input
             type="number"
             label="Precio de venta"
-            description="Precio en euros (€)"
+            description="Precio en pesos ($)"
             placeholder="0.00"
             value={listingData.price || ''}
             onChange={(e) => handleInputChange('price', e.target.value)}
